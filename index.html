@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- animasi loading -->
+  <div class="loading bg-warning bg-gradient">
+    <div class="circle borderOpacity">
+      <span class="percent-container">
+          <span class="percent-value">0</span><sup class="percent">%</sup>
+      </span>
+      <div class="inner startLoading innerOpacity">
+
+      </div>
+  </div>
+  </div>
+
+  <!-- sticky navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg ps-md-5 py-2" id="navbar">
+        <div class="container-fluid">
+          <img id="logo" src="asset/images/shl-logo.png" class="ms-5" alt="" srcset="" width="130" height="80">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div><div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 250px;" >
+          <div class="offcanvas-header">
+            <img id="logo" src="asset/images/shl-logo.png" alt="" srcset="" width="130" height="80">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body navbar-nav">
+                <li class="nav-item"  style="width: 12rem;">
+                  <a class="text-decoration-none link-dark bold ps-lg-5 my-lg-0" href="#about"><b>Tentang Kami</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-decoration-none link-dark bold px-lg-3 my-lg-0" href="#features"><b>Fitur</b></a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="text-decoration-none link-dark bold ps-lg-5 pe-lg-5 my-lg-0" href="#price"><b>Harga</b></a>
+                </li>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Header -->
+    <div id="header" class="container-fluid header-bg py-5">
+      <div class="container-fluid row d-flex justify-content-evenly">
+          <div class="col header-content text-center ps-4">
+            <h2><strong>SISTEM  MANAJEMEN  SEKOLAH  TERPADU</strong></h2>
+            <p class="my-4">Semua solusi permasalahan sekolah, ada di genggaman anda.</p>
+            <a class="text-decoration-none bold" href="#price"><button type="button" class="btn btn-outline-dark"><strong>Mulai Sekarang!</strong></button></a>
+          </div>
+          <div class="col mt-5 text-center  ps-5">
+            <img src="asset/images/brand-shl.png" class="brand-shl" alt="" srcset="">
+          </div>
+      </div>
+    </div>
+
+
+  <!-- about us -->
+  <div id="about" class="mt-5 py-5 reveal" style="box-shadow: 0px 15px 10px -15px #111;">
+      <div class="container-fluid row me-0 p-0">
+          <div class="col text-center about-bg-1">
+            <img src="asset/images/brand-shl.png" class="brand-shl-about" alt="" srcset="">
+          </div>
+          <div class="col text-start pe-5 ms-5 my-5">
+            <figure>
+              <figcaption class="blockquote-footer h1 text-warning">
+                Tentang Kami
+              </figcaption>
+              <br>
+              <blockquote class="blockquote fs-4">
+                <p>Sekolah Handal merupakan sistem manajemen sekolah berbasis digital. Dengan adanya Sekolah Handal maka diharapkan mampu menyelesaikan permasalahan di bidang pendidikan dan meningkatkan mutu pendidikan sehingga terjalin manajemen yang terkoordinasi dengan baik.</p>
+              </blockquote>
+            </figure>
+          </div>
+      </div>
+  </div>
+
+  <!-- Our service -->
+  <div class="container-fluid bg-secondary bg-gradient bg-opacity-10 px-4 py-5 text-center ">
+
+    <h2 class="blockquote-footer text-warning reveal">Pelayanan Kami</h2>
+
+    <div class="row d-flex justify-content-evenly reveal">
+
+        <div class="col-md-6 my-3 py-2 px-4 text-start rounded bg-white shadow card-service"  style="max-width: 500px;">
+          <div class="row px-2 py-3 border border-warning shadow-sm rounded">
+            <div class="col-3 text-center my-auto"  style="font-size: 3rem;">
+              <i class="fa-sharp fa-solid fa-bell-concierge text-warning service-icon"></i>
+            </div>
+            <div class="col-9 mt-lg-3" style="font-size: .7rem;">
+              <h5  style="font-size: .9rem;">Pelayanan Ramah & Optimal</h5>
+              <p>Kami berusaha untuk memberikan pelayanan yang ramah dan optimal demi kenyamanan anda.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 my-3 py-2 px-4 text-start rounded bg-white shadow card-service"  style="max-width: 500px;">
+          <div class="row px-2 py-3 border border-warning shadow-sm rounded">
+            <div class="col-3 text-center my-auto"  style="font-size: 3rem;">
+              <i class="fa-brands fa-algolia text-warning service-icon"></i>
+            </div>
+            <div class="col-9" style="font-size: .7rem;">
+              <h5  style="font-size: .9rem;">Pemeriksaan Rutinan Aplikasi</h5>
+              <p>Kami memberikan layanan pemeriksaan aplikasi secara rutin setiap bulannya untuk menjaga Sekolah Handal tetap nyaman untuk digunakan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 my-3 py-2 px-4 text-start rounded bg-white shadow card-service"  style="max-width: 500px;">
+          <div class="row px-2 py-3 border border-warning shadow-sm rounded">
+            <div class="col-3 text-center my-auto"  style="font-size: 3rem;">
+              <i class="fa-solid fa-file-invoice-dollar text-warning service-icon"></i>
+            </div>
+            <div class="col-9  mt-lg-3" style="font-size: .7rem;">
+              <h5  style="font-size: .9rem;">Penawaran Terjangkau</h5>
+              <p>Kami memberikan penawaran harga yang terjangkau dan ramah di kantong pelajar & wali murid.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 my-3 py-2 px-4 text-start rounded bg-white shadow card-service"  style="max-width: 500px;">
+          <div class="row px-2 py-3 border border-warning shadow-sm rounded">
+            <div class="col-3 text-center my-auto"  style="font-size: 3rem;">
+              <i class="fa-solid fa-user-tie text-warning service-icon"></i>
+            </div>
+            <div class="col-9" style="font-size: .7rem;">
+              <h5  style="font-size: .9rem;">Penanganan Secara Profesional</h5>
+              <p>Kami siap membantu menangani permasalahan anda yang berkaitan dengan penggunaan aplikasi Sekolah Handal secara profesional.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+  
+
+  <!-- our features -->
+  <div id="features" class="container-fluid text-center pt-5 " style="box-shadow: 0px -15px 10px -15px #111;">
+    <h2 class="blockquote-footer text-warning reveal">Fitur Kami</h2>
+
+    <div class="avatars-container mb-3 reveal">
+
+      <div class="avatars">
+
+        <div class="avatar-item card border-0 text-center pt-3 my-4 mx-2">
+          <div class="container rounded-pill border border-warning" style="box-shadow: 0px 0px 5px 1px #fed415;">
+            <i class="fa-solid fa-school-circle-exclamation text-dark"></i>
+          </div>
+          <div class="card-body" style="font-size: .7rem;">
+            <h5 class="card-title">Fitur Informasi Sekolah</h5><br>
+            <p class="card-text">Fitur Informasi Sekolah merupakan fitur yang berfungsi sebagai wadah informasi yang berkaitan dengan sekolah dan user dapat mengakses informasi tersebut. Dengan adanya fitur ini, diharapkan informasi sekolah dapat tersampaikan dengan baik.</p>
+          </div>
+        </div>
+  
+        <div class="avatar-item card border-0 text-center pt-3 my-4 mx-2">
+          <div class="container rounded-pill border border-warning" style="box-shadow: 0px 0px 5px 1px #fed415;">
+            <i class="fa-solid fa-money-bill-1-wave text-dark"></i>
+          </div>
+          <div class="card-body" style="font-size: .7rem;">
+            <h5 class="card-title">Fitur Pembayaran Sekolah</h5><br>
+            <p class="card-text">Fitur Pembayaran Sekolah merupakan fitur yang dapat membantu untuk mempermudah transaksi pembayaran tagihan sekolah seperti SPP, Tagihan Sekolah, Donasi, serta Tabungan Sekolah.</p>
+          </div>
+        </div>
+  
+        <div class="avatar-item card border-0 text-center pt-3 my-4 mx-2">
+          <div class="container rounded-pill border border-warning" style="box-shadow: 0px 0px 5px 1px #fed415;">
+            <i class="fa-solid fa-chalkboard-user text-dark"></i>
+          </div>
+          <div class="card-body" style="font-size: .7rem;">
+            <h5 class="card-title">Fitur Akademik Siswa</h5><br>
+            <p class="card-text">Fitur Akademik Siswa merupakan fitur yang berfungsi sebagai sistem pengembangan pengetahuan dan kemampuan akademik siswa di sekolah. Dengan sistem pembelajaran dan ujian berbasis digital diharapkan dapat menyelesaikan permasalahan mengenai pengembangan bakat siswa dengan baik.</p>
+          </div>
+        </div>
+  
+        <div class="avatar-item card border-0 text-center pt-3 my-4 mx-2">
+          <div class="container rounded-pill border border-warning" style="box-shadow: 0px 0px 5px 1px #fed415;">
+            <i class="fa-solid fa-money-bill-transfer text-dark"></i>
+          </div>
+          <div class="card-body" style="font-size: .7rem;">
+            <h5 class="card-title">Fitur Administrasi Sekolah</h5><br>
+            <p class="card-text">Fitur Administrasi Sekolah merupakan fitur yang berfungsi untuk memudahkan administrasi sekolah. Dengan fitur ini, anda bisa mengatur serta melihat data pembukuan & pemberkasan sekolah, manajemen gaji guru, hingga cetak raport siswa.</p>
+          </div>
+        </div>
+  
+        <div class="avatar-item card border-0 text-center pt-3 my-4 mx-2">
+          <div class="container rounded-pill border border-warning" style="box-shadow: 0px 0px 5px 1px #fed415;">
+            <i class="fa-solid fa-person-chalkboard text-dark"></i>
+          </div>
+          <div class="card-body" style="font-size: .7rem;">
+            <h5 class="card-title">Fitur Presensi Guru & Siswa</h5><br>
+            <p class="card-text">Fitur Presensi merupakan fitur yang berfungsi untuk user melakukan presensi secara daring. Sistem dibuat untuk penjadwalan kehadiran yang nantinya akan terformat laporan bulanan. Dengan fitur ini, presensi menjadi lebih teratur sehingga siswa maupun guru menjadi lebih disiplin dan menciptakan efisiensi dalam rekapitulasi data presensi.</p>
+          </div>
+        </div>
+  
+        <div class="avatar-item card border-0 text-center pt-3 my-4 mx-2">
+          <div class="container rounded-pill border border-warning" style="box-shadow: 0px 0px 5px 1px #fed415;">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+          <div class="card-body" style="font-size: .7rem;">
+            <h5 class="card-title">Fitur Manajemen Kegiatan</h5><br>
+            <p class="card-text">Fitur Manajemen Kegiatan merupakan fitur yang berfungsi untuk mengatur jalannya aktivitas serta kegiatan dalam sekolah, misalnya Ekstrakurikuler, Manajemen Jadwal ( Jadwal pelajaran, jadwal mengajar, jadwal piket ), serta Struktural Kelas.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+    </div>
+    <button class="left btn btn-warning me-3 text-white"><i class="fa-solid fa-backward"></i></button>
+    <button class="right btn btn-warning ms-3  text-white"><i class="fa-solid fa-forward"></i></button>
+    
+  </div>
+
+
+  <!-- our goals -->
+  <div class="container-fluid p-5 mt-5 text-center reveal" style="background-image: linear-gradient( 0deg, #fead15, #fee715, #fed415);">
+
+    <h2 class="blockquote-footer mb-5">Tujuan Kami</h2>
+
+    <div class="row d-flex justify-content-evenly mb-5">
+
+      <div class="col-md-3 px-2 py-3 mx-5" >
+        <div class="text-center my-auto  text-white"  style="font-size: 3rem;text-shadow: 0px 0px 10px rgba(0,0,0,1);">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="mt-lg-3" style="font-size: .7rem;">
+          <h5 class="h5">Preparation & Planning Education</h5>
+          <p>( Persiapan dan Perencanaan Pendidikan )</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 px-2 py-3 mx-5">
+        <div class="text-center my-auto text-white"  style="font-size: 3rem;text-shadow: 0px 0px 10px rgba(0,0,0,1);">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <div class="mt-lg-3" style="font-size: .7rem;">
+          <h5 class="h5">Commitment Plan Education</h5>
+          <p>( Rencana Komitmen Pendidikan )</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 px-2 py-3 mx-5">
+        <div class="text-center my-auto text-white"  style="font-size: 3rem;text-shadow: 0px 0px 10px rgba(0,0,0,1);">
+          <i class="fa-solid fa-users-viewfinder"></i>
+        </div>
+        <div class="mt-lg-3" style="font-size: .7rem;">
+          <h5 class="h5">Focus Project Education</h5>
+          <p>( Fokus Proyek Pendidikan )</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 px-2 py-3 mx-5">
+        <div class="text-center my-auto text-white"  style="font-size: 3rem;text-shadow: 0px 0px 10px rgba(0,0,0,1);">
+          <i class="fa-solid fa-pen-ruler"></i>
+        </div>
+        <div class="mt-lg-3" style="font-size: .7rem;">
+          <h5 class="h5">Smart Work & Hard Work</h5>
+          <p>( Kerja Cerdas dan Kerja Keras )</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 px-2 py-3 mx-5">
+        <div class="text-center my-auto text-white"  style="font-size: 3rem;text-shadow: 0px 0px 10px rgba(0,0,0,1);">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="mt-lg-3" style="font-size: .7rem;">
+          <h5 class="h5">Growth & Success</h5>
+          <p>( Berkembang dan Sukses )</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 px-2 py-3 mx-5">
+        <div class="text-center my-auto text-white"  style="font-size: 3rem;text-shadow: 0px 0px 10px rgba(0,0,0,1);">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <div class="mt-lg-3" style="font-size: .7rem;">
+          <h5 class="h5">Achievement Education</h5>
+          <p>( Pendidikan Prestasi )</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Price -->
+  <div id="price" class="container-fluid py-5 my-3 text-center reveal">
+
+    <h2 class="blockquote-footer text-warning">Harga</h2>
+
+    <div class="container-fluid row d-flex justify-content-evenly ps-5 mt-5">
+
+      <div class="col-md-3 card-price border border-warning py-3 bg-warning bg-gradient rounded my-3">
+
+        <div>
+          <img class="brand-price" src="asset/images/brand-shl.png" alt="brand-SHL" width="150px" height="150px">
+        </div>
+      
+        <div class="card-body">
+          <h5 class="">Sekolah Handal Standard Version</h5>
+          <p class="mt-4 fw-bold text-danger" style="margin-bottom: -8px;"><sup class="h5">Rp. </sup><span class="text-decoration-line-through h4"> 3.500</span><sub>/bulan</sub></p>
+          <p class="fw-bold text-success"><sup class="h3">Rp. </sup><span class="h1"> 2.999</span><sub>/bulan</sub></p><br>
+
+          <hr class="text-dark border border-dark border-2">
+
+          <ul class="list-group list-group-flush bg-none" style="font-size: .7rem;">
+            
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start">
+              <div class="mt-3 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4 captitalize">Gratis kunjungan Maintenance System & Device Komputer rutin bulanan.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-3">
+              <div class="mt-2 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis User Account tenaga pendidik.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-4">
+              <div class="text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Urgent Call Maintenance.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-3">
+              <div class="mt-2 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Technical Support And Training System.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start">
+              <div class="mt-2 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis pembuatan website sekolah dan maintenance website sekolah bila sudah ada websitenya.
+              </p>
+              <div class="form-check">
+            </li>
+
+          </ul>
+          
+          
+
+          <a class="text-decoration-none bold"><button type="button" class="btn btn-outline-dark mb-3"><strong>PILIH</strong></button></a>
+        </div>
+      </div>
+
+      <div class="col-md-5 card-price border border-warning py-3 rounded my-3"  style="background-image: linear-gradient( 0deg, #fe4b15, #fead15, #ff663b);">
+
+        <div>
+          <img class="brand-price" src="asset/images/brand-shl.png" alt="brand-SHL" width="200px" height="200px">
+        </div>
+      
+        <div class="card-body">
+          <h3 class="">Sekolah Handal PPDB Edition</h3>
+          <h3 class="text-danger"><sup>( RECOMENDED )</sup></h3>
+
+          <p class="fw-bold text-success"><sup class="h3">Rp. </sup><span class="h1"> 2.499.000</span><sub>/bulan</sub></p>
+
+          <hr class="text-dark border border-dark border-2">
+
+          <ul class="list-group list-group-flush bg-none" style="font-size: .7rem;">
+            
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start">
+              <div class=" text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4 captitalize">Gratis System Management PPDB & Integrasi Sekolah Handal.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-3">
+              <div class=" text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Hosting & Domain .sch.id.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-4">
+              <div class="text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Revisi System & Web Design 1x.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Consulting & Technical System.
+              </p>
+              <div class="form-check">
+            </li>
+
+          </ul><br><br><br><br><br><br>
+          
+          
+
+          <a class="text-decoration-none bold"><button type="button" class="btn btn-dark  mb-3"><strong>PILIH</strong></button></a>
+        </div>
+      </div>
+
+      <div class="col-md-3 card-price border border-warning py-3 bg-warning bg-gradient rounded my-3">
+
+        <div>
+          <img class="brand-price" src="asset/images/brand-shl.png" alt="brand-SHL" width="150px" height="150px">
+        </div>
+      
+        <div class="card-body">
+          <h5 class="">Sekolah Handal Full<br> Version</h5>
+          <p class="mt-4 fw-bold text-danger" style="margin-bottom: -8px;"><sup class="h5">Rp. </sup><span class="text-decoration-line-through h4"> 4.500</span><sub>/bulan</sub></p>
+          <p class="fw-bold text-success"><sup class="h3">Rp. </sup><span class="h1"> 3.999</span><sub>/bulan</sub></p><br>
+
+          <hr class="text-dark border border-dark border-2">
+
+          <ul class="list-group list-group-flush bg-none" style="font-size: .7rem;">
+            
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start">
+              <div class="mt-3 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4 captitalize">Gratis kunjungan Maintenance System & Device Komputer rutin bulanan.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-3">
+              <div class="mt-2 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis User Account tenaga pendidik.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-4">
+              <div class="text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Urgent Call Maintenance.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start pt-3">
+              <div class="mt-2 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis Technical Support And Training System.
+              </p>
+              <div class="form-check">
+            </li>
+
+            <li class="list-group-item text-start bg-transparent d-flex justify-content-start">
+              <div class="mt-2 text-primary">
+                <i class="fa-solid fa-circle-check fs-5 "></i>
+              </div>
+              
+              <p class="ms-4">Gratis pembuatan website sekolah dan maintenance website sekolah bila sudah ada websitenya.
+              </p>
+              <div class="form-check">
+            </li>
+
+          </ul>
+          
+          
+
+          <a class="text-decoration-none bold"><button type="button" class="btn btn-outline-dark mb-3"><strong>PILIH</strong></button></a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- why us -->
+  <div class="mt-5 py-5 reveal">
+    <div class="container-fluid row me-0 p-0">
+      <div class="col text-center about-bg-1">
+        <img src="asset/images/brand-shl.png" class="brand-shl-about" alt="" srcset="">
+      </div>
+      <div class="col text-start pe-5 ms-5 my-2">
+        <figure>
+          <figcaption class="blockquote-footer h1 text-warning">
+            Mengapa Kami?
+          </figcaption>
+          <br>
+          <blockquote class="blockquote fs-4">
+            <p>Sekolah Handal memiliki banyak manfaat yang dapat membantu pengelolaan administrasi sekolah, membantu memudahkan jalannya transaksi pembayaran tagihan sekolah, memudahkan presensi dan rekap data presensi, meningkatkan kegiatan belajar mengajar, sebagai wadah untuk kegiatan amal dan donasi, hingga manajemen jadwal, ekstrakurikuler, dan struktural kepengurusan sekolah.
+              Sekolah Handal memiliki fitur yang lebih lengkap bila dibandingkan dengan aplikasi lain dengan penawaran yang terjangkau dan service yang berkualitas.
+              </p>
+          </blockquote>
+        </figure>
+      </div>
+  </div>
+  </div>
+
+  
+  <!-- footer & contact -->
+  <footer class="mt-5 pb-1 pt-5">
+    <div class="container-fluid row d-flex justify-content-center pt-5">
+        <div class="col text-start ms-lg-5 pt-5 ps-5 mt-5" >
+          <img class="mb-3 mt-5" src="asset/images/shl-logo.png" alt="" srcset="" width="100" height="80">
+          <h4>CONTACT</h2>
+          <p class="my-4">Whatsapp : 0895 3302 67878 / 0895 3607 36943</p>
+          <p class="my-4">Email : <a class="text-dark"> rafyangaritsolution@gmail.com</a></p>
+          <p class="my-4">Alamat : Jl. Dukuh Kupang Timur XV, Surabaya, Jawa Timur</p>
+        </div>
+        
+        <div class="col text-center fs-2 pb-5 d-flex justify-content-center align-items-end">
+          
+          <a class="mx-4 text-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Rafyangar Itsolution" href="#"><i class="fa-brands fa-facebook" ></i></a>
+          <a class="mx-4 text-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="rafyangar_itsolution" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="mx-4 text-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="rafyangar_itsolution" href="#"><i class="fa-brands fa-youtube"></i></a>
+          
+
+        </div>
+        <hr class="my-0 text-center" style="width: 90%;"> 
+        
+        <p class="text-center mb-1"><sub>&#169; Copyright 2023, Sekolah Handal & Rafyangar It Solution</sub></p>
+      </div>
+    </div>
+  </footer>
+
+<!-- 
+
+
+  <div style="background-color: #fee715;margin-top: 200px;">Main Color : #fee715</div>
+  <div style="background-color: #fed415;">Monochromatic Color : Dark : #fed415</div>
+  <div style="background-color: #fec015;">Monochromatic Color : Dark : #fec015</div>
+  <div style="background-color: #fead15;">Monochromatic Color : Dark : #fead15</div>
+  <div style="background-color: #fece84;">Monochromatic Color : Light : #fece84</div>
+  <div style="background-color: #D9D9D9;">Monochromatic Color : grey : #D9D9D9</div>
+  <div style="background-color: #EDE9E9;">Monochromatic Color : grey : #EDE9E9</div>
+  <div style="background-color: #25d366;">Analogues Color : Green : #25d366</div>
+  <div style="background-color: #21a366;">Analogues Color : Green : #21a366</div>
+  <div style="background-color: #bfd865;">Analogues Color : Green : #bfd865</div>
+  <div style="background-color: #c4e940;">Analogues Color : Green : #c4e940</div>
+  <div style="background-color: #ff3b3b;">Analogues Color : Red : #ff3b3b</div>
+  <div style="background-color: #fe4b15;">Analogues Color : Red : #fe4b15</div>
+  <div style="background-color: #ff663b;">Analogues Color : Red : #ff663b</div>
+  <div style="background-color: #2d83f4;">Complementary Color : blue : #2d83f4</div>
+  <div style="background-color: #2db1f4;">Complementary Color : blue : #2db1f4</div> -->
+</body>
+
+<script src="asset/js/bootstrap.min.js"></script>
+<script src="asset/js/bootstrap.bundle.min.js"></script>
+<script src="asset/js/script.js"></script>
+<script src="https://kit.fontawesome.com/5d46136009.js" crossorigin="anonymous"></script>
+
+
+</html>
